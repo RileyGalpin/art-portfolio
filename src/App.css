@@ -1,38 +1,287 @@
-.App {
-  text-align: center;
+/* --- Global Styles --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* --- Navigation --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 40px;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #888;
+}
+
+/* --- Home Page --- */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh; /* Centers the content vertically */
+}
+
+.bio-section {
+  display: flex;
+  flex-direction: row;
+  gap: 80px; /* Lots of breathing room between image and text */
+  max-width: 1000px;
+  align-items: center;
+}
+
+.bio-image-wrapper {
+  flex-shrink: 0;
+}
+
+.profile-pic {
+  width: 350px;
+  height: auto;
+  border-radius: 2px;
+  box-shadow: 15px 15px 0px 0px #f0f0f0; /* Adds an artistic offset shadow */
+}
+
+.bio-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.artist-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+  letter-spacing: -1px;
+}
+
+.accent-line {
+  width: 50px;
+  height: 2px;
+  background-color: #1a1a1a;
+  margin-bottom: 30px;
+}
+
+.artist-statement {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.contact-wrapper h3 {
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  color: #999;
+  margin-bottom: 15px;
+}
+
+.contact-list {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Puts the links in a neat horizontal row */
+}
+
+.contact-list a {
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 400;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.contact-list a:hover {
+  color: #777;
+  border-bottom: 1px solid #777; /* Elegant hover effect */
+}
+
+/* Make it stack neatly on small phone screens */
+@media (max-width: 768px) {
+  .bio-section {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 20px;
+  }
+  .artist-name {
+    font-size: 3rem;
+  }
+  .profile-pic {
+    width: 100%;
+    max-width: 400px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* --- Portfolio Page --- */
+.portfolio-container {
+  padding: 40px 0;
+}
+
+.portfolio-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 60px;
+  letter-spacing: -0.5px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 40px; /* Generous breathing room between pieces */
+}
+
+.grid-item {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden; /* Keeps the overlay neatly inside the box */
+}
+
+.grid-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+/* Elegant hover overlay that reveals the title */
+.grid-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(26, 26, 26, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.grid-overlay span {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.grid-item:hover .grid-image {
+  transform: scale(1.05); /* Slow, subtle zoom */
+}
+
+.grid-item:hover .grid-overlay {
+  opacity: 1; /* Fade in the dark overlay and title */
+}
+
+/* --- Modal (Lightbox) - Centered & Clean --- */
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(15, 15, 15, 0.95); /* Deep, almost-black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 85vw;
 }
 
-.App-link {
-  color: #61dafb;
+.modal-image {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5); /* Heavy drop shadow for depth */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
 }
+
+.modal-title {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.image-counter {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Modern Navigation Buttons */
+.close-btn {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 300;
+  cursor: pointer;
+  z-index: 1001;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #aaa;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.5);
+  font-size: 50px;
+  font-weight: 300;
+  cursor: pointer;
+  padding: 20px;
+  transition: color 0.3s ease;
+  z-index: 1001;
+}
+
+.nav-btn:hover {
+  color: #fff;
+}
+
+.prev { left: 2vw; }
+.next { right: 2vw; }
