@@ -1,35 +1,116 @@
 import React, { useState } from 'react';
 
-// Your artwork data remains the same
 const artworks = [
   { 
     id: 1, 
-    title: 'Hope', 
-    coverImage: '/images/hope.jpeg',
+    title: 'Belonging', 
+    coverImage: '/images/Belonging1.JPG',
     images: [
-      '/images/hope.jpeg', 
-      'https://via.placeholder.com/800x800?text=Hope+Detail+1', 
-      'https://via.placeholder.com/800x800?text=Hope+Detail+2'
+      '/images/Belonging1.JPG', 
+      '/images/Belonging2.JPG', 
+      '/images/Belonging3.JPG'
     ]
   },
   { 
     id: 2, 
-    title: 'Belonging', 
-    coverImage: '/images/belonging.jpeg',
+    title: 'Eclipse', 
+    coverImage: '/images/Eclipse1.JPG',
     images: [
-      '/images/belonging.jpeg', 
-      'https://via.placeholder.com/800x800?text=Belonging+Detail+1'
+      '/images/Eclipse1.JPG', 
+      '/images/Eclipse2.JPG'
     ]
   },
   { 
     id: 3, 
-    title: 'Safety', 
-    coverImage: '/images/safety.jpeg',
+    title: 'Fog', 
+    coverImage: '/images/Fog.JPG',
     images: [
-      '/images/safety.jpeg', 
-      'https://via.placeholder.com/800x800?text=Safety+Detail+1',
-      'https://via.placeholder.com/800x800?text=Safety+Detail+2',
-      'https://via.placeholder.com/800x800?text=Safety+Detail+3'
+      '/images/Fog.JPG', 
+      '/images/Fog1.JPG', 
+      '/images/Fog2.JPG'
+    ]
+  },
+  { 
+    id: 4, 
+    title: 'Forgotten', 
+    coverImage: '/images/Forgotten1.JPG',
+    images: [
+      '/images/Forgotten1.JPG', 
+      '/images/Forgotten2.JPG', 
+      '/images/Forgotten3.JPG',
+      '/images/Forgotten4.JPG',
+      '/images/Forgotten5.JPG',
+      '/images/Forgotten6.JPG'
+    ]
+  },
+  { 
+    id: 5, 
+    title: 'Hope', 
+    coverImage: '/images/Hope1.JPG',
+    images: [
+      '/images/Hope1.JPG', 
+      '/images/Hope2.JPG', 
+      '/images/Hope3.JPG',
+      '/images/Hope4.JPG'
+    ]
+  },
+  { 
+    id: 6, 
+    title: 'Hypo', 
+    coverImage: '/images/Hypo1.JPG',
+    images: [
+      '/images/Hypo1.JPG', 
+      '/images/Hypo2.JPG'
+    ]
+  },
+  { 
+    id: 7, 
+    title: 'Picnic', 
+    coverImage: '/images/Picnic.JPG',
+    images: [
+      '/images/Picnic.JPG'
+    ]
+  },
+  { 
+    id: 8, 
+    title: 'Safety', 
+    coverImage: '/images/Safety1.JPG',
+    images: [
+      '/images/Safety1.JPG', 
+      '/images/Safety2.JPG', 
+      '/images/Safety3.JPG',
+      '/images/Safety4.JPG'
+    ]
+  },
+  { 
+    id: 9, 
+    title: 'Sparrow', 
+    coverImage: '/images/Sparrow1.JPG',
+    images: [
+      '/images/Sparrow1.JPG', 
+      '/images/Sparrow2.JPG', 
+      '/images/Sparrow3.JPG'
+    ]
+  },
+  { 
+    id: 10, 
+    title: 'Still Life', 
+    coverImage: '/images/StillLife1.JPG',
+    images: [
+      '/images/StillLife1.JPG', 
+      '/images/StillLife2.JPG', 
+      '/images/StillLife3.JPG',
+      '/images/StillLife4.JPG'
+    ]
+  },
+  { 
+    id: 11, 
+    title: 'Waiting', 
+    coverImage: '/images/Waiting1.png',
+    images: [
+      '/images/Waiting1.png', 
+      '/images/Waiting2.JPG', 
+      '/images/Waiting3.JPG'
     ]
   }
 ];
