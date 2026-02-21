@@ -33,7 +33,7 @@ const artworks = [
   { 
     id: 4, 
     title: 'Forgotten', 
-    coverImage: '/images/Forgotten1.JPG',
+    coverImage: '/images/Forgotten3.JPG',
     images: [
       '/images/Forgotten3.JPG', 
       '/images/Forgotten1.JPG', 
@@ -74,7 +74,7 @@ const artworks = [
   { 
     id: 8, 
     title: 'Safety', 
-    coverImage: '/images/Safety1.JPG',
+    coverImage: '/images/Safety3.JPG',
     images: [
       '/images/Safety3.JPG', 
       '/images/Safety2.JPG', 
