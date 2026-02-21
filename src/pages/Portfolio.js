@@ -35,9 +35,9 @@ const artworks = [
     title: 'Forgotten', 
     coverImage: '/images/Forgotten1.JPG',
     images: [
+      '/images/Forgotten3.JPG', 
       '/images/Forgotten1.JPG', 
-      '/images/Forgotten2.JPG', 
-      '/images/Forgotten3.JPG',
+      '/images/Forgotten2.JPG',
       '/images/Forgotten4.JPG',
       '/images/Forgotten5.JPG',
       '/images/Forgotten6.JPG'
@@ -76,9 +76,9 @@ const artworks = [
     title: 'Safety', 
     coverImage: '/images/Safety1.JPG',
     images: [
-      '/images/Safety1.JPG', 
+      '/images/Safety3.JPG', 
       '/images/Safety2.JPG', 
-      '/images/Safety3.JPG',
+      '/images/Safety1.JPG',
       '/images/Safety4.JPG'
     ]
   },
