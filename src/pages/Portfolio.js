@@ -112,7 +112,63 @@ const artworks = [
       '/images/Waiting2.JPG', 
       '/images/Waiting3.JPG'
     ]
-  }
+  },
+  { 
+    id: 12, 
+    title: 'Anna With Lillies', 
+    coverImage: '/images/AnnaWithLillies1.jpeg',
+    images: [
+      '/images/AnnaWithLillies1.jpeg', 
+      '/images/AnnaWithLillies2.jpeg', 
+      '/images/AnnaWithLillies3.jpeg'
+    ]
+  },
+
+  { 
+    id: 13, 
+    title: 'Kale With Corn Flowers', 
+    coverImage: '/images/KaleWithCornFlowers1.jpeg',
+    images: [
+      '/images/KaleWithCornFlowers1.jpeg', 
+      '/images/KaleWithCornFlowers2.jpeg', 
+      '/images/KaleWithCornFlowers3.jpeg'
+    ]
+  },
+
+  { 
+    id: 14, 
+    title: 'Lina With Roses', 
+    coverImage: '/images/LinaWithRoses1.jpeg',
+    images: [
+      '/images/LinaWithRoses1.jpeg', 
+      '/images/LinaWithRoses2.jpeg', 
+      '/images/LinaWithRoses3.jpeg'
+    ]
+  },
+
+  {
+  id: 15, 
+  title: 'Herring', 
+  coverImage: '/images/Herring1.jpeg',
+  images: [
+    '/images/Herring1.jpeg', 
+    '/images/Herring2.jpeg', 
+    '/images/Herring3.jpeg'
+  ]
+},
+
+{
+  id: 16, 
+  title: 'Roses', 
+  coverImage: '/images/Roses01.jpeg',
+  images: [
+    '/images/Roses01.jpeg', 
+    '/images/Roses2.jpeg', 
+    '/images/Roses3.jpeg'
+  ]
+},
+
+
 ];
 
 function Portfolio() {
