@@ -63,14 +63,14 @@ const artworks = [
       '/images/Hypo2.JPG'
     ]
   },
-  { 
-    id: 7, 
-    title: 'Picnic', 
-    coverImage: '/images/Picnic.JPG',
-    images: [
-      '/images/Picnic.JPG'
-    ]
-  },
+  // { 
+  //   id: 7, 
+  //   title: 'Picnic', 
+  //   coverImage: '/images/Picnic.JPG',
+  //   images: [
+  //     '/images/Picnic.JPG'
+  //   ]
+  // },
   { 
     id: 8, 
     title: 'Safety', 
@@ -167,6 +167,31 @@ const artworks = [
     '/images/Roses3.jpeg'
   ]
 },
+
+{
+  id: 17, 
+  title: 'Infinity', 
+  coverImage: '/images/Infinity1.jpeg',
+  images: [
+    '/images/Infinity1.jpeg', 
+    '/images/infinity2.jpeg', 
+    '/images/infinity3.jpeg',
+    '/images/infinity4.jpeg',
+    '/images/infinity5.jpeg'
+  ]
+},
+
+{
+  id: 18, 
+  title: 'Roses', 
+  coverImage: '/images/morningAfter1.jpeg',
+  images: [
+    '/images/morningAfter1.jpeg',
+    '/images/morningAfter2.jpeg',
+    '/images/morningAfter3.jpeg'
+  ]
+}
+
 
 
 ];
