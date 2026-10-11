@@ -134,6 +134,7 @@ const artworks = [
   title: 'Double Infinity', 
   coverImage: '/images/DoubleInfinity.JPG',
   images: [
+    '/images/DoubleInfinity.JPG',
     '/images/DoubleInfinity1.JPG',
     '/images/DoubleInfinity3.JPG'
   ]
@@ -144,6 +145,7 @@ const artworks = [
   title: 'Patience Park', 
   coverImage: '/images/WakullaSprings.jpeg',
   images: [
+    '/images/WakullaSprings.jpeg',
     '/images/PatiencePark3.jpeg'
   ]
 },
@@ -152,6 +154,7 @@ const artworks = [
   title: 'Picking Flowers', 
   coverImage: '/images/PickingFlowers.JPG',
   images: [
+    '/images/PickingFlowers.JPG',
     '/images/PickingFlowers2.JPG',
     '/images/PickingFlowers3.JPG'
   ]
@@ -161,6 +164,7 @@ const artworks = [
   title: 'Wakulla Springs', 
   coverImage: '/images/q1p6o copy.jpeg',
   images: [
+    '/images/q1p6o copy.jpeg',
     '/images/WakullaSprings2.JPG',
     '/images/WakullaSprings3.JPG'
   ]
@@ -170,6 +174,7 @@ const artworks = [
   title: 'Natures Song', 
   coverImage: '/images/pT1Nk.png',
   images: [
+    '/images/pT1Nk.png',
     '/images/YLLY7.jpeg'
     
   ]
@@ -180,7 +185,8 @@ const artworks = [
   title: 'Lafayette Park', 
   coverImage: '/images/9aiwn.jpeg',
   images: [
-    '/images/5kKwD.jpeg',
+    '/images/9aiwn.jpeg',
+    '/images/5kKwD.jpeg'
     
   ]
 },
@@ -190,14 +196,11 @@ const artworks = [
   title: 'Dreams', 
   coverImage: '/images/EAchq.png',
   images: [
-    '/images/MBE3F.png',
+    '/images/EAchq.png',
+    '/images/MBE3F.png'
     
   ]
-},
-
-
-
-
+}
 
 ];
 
