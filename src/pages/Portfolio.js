@@ -234,8 +234,8 @@ function Portfolio() {
       
       {/* The Grid */}
       <div className="image-grid">
-        {artworks.map((art) => (
-          <div className="grid-item" key={art.id} onClick={() => openModal(art)}>
+        {[...artworks].reverse().map((art) => (
+  <div className="grid-item" key={art.id} onClick={() => openModal(art)}>
             <img
               src={art.coverImage}
               alt={art.title}
