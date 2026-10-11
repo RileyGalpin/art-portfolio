@@ -21,16 +21,6 @@ const artworks = [
     ]
   },
   { 
-    id: 3, 
-    title: 'Fog', 
-    coverImage: '/images/Fog.JPG',
-    images: [
-      '/images/Fog.JPG', 
-      '/images/Fog1.JPG', 
-      '/images/Fog2.JPG'
-    ]
-  },
-  { 
     id: 4, 
     title: 'Forgotten', 
     coverImage: '/images/Forgotten3.JPG',
@@ -55,23 +45,6 @@ const artworks = [
     ]
   },
   { 
-    id: 6, 
-    title: 'Hypo', 
-    coverImage: '/images/Hypo1.JPG',
-    images: [
-      '/images/Hypo1.JPG', 
-      '/images/Hypo2.JPG'
-    ]
-  },
-  // { 
-  //   id: 7, 
-  //   title: 'Picnic', 
-  //   coverImage: '/images/Picnic.JPG',
-  //   images: [
-  //     '/images/Picnic.JPG'
-  //   ]
-  // },
-  { 
     id: 8, 
     title: 'Safety', 
     coverImage: '/images/Safety3.JPG',
@@ -80,16 +53,6 @@ const artworks = [
       '/images/Safety2.JPG', 
       '/images/Safety1.JPG',
       '/images/Safety4.JPG'
-    ]
-  },
-  { 
-    id: 9, 
-    title: 'Sparrow', 
-    coverImage: '/images/Sparrow1.JPG',
-    images: [
-      '/images/Sparrow1.JPG', 
-      '/images/Sparrow2.JPG', 
-      '/images/Sparrow3.JPG'
     ]
   },
   { 
@@ -156,41 +119,83 @@ const artworks = [
     '/images/Herring3.jpeg'
   ]
 },
-
-{
-  id: 16, 
-  title: 'Roses', 
-  coverImage: '/images/Roses01.jpeg',
-  images: [
-    '/images/Roses01.jpeg', 
-    '/images/Roses2.jpeg', 
-    '/images/Roses3.jpeg'
-  ]
-},
-
-{
-  id: 17, 
-  title: 'Infinity', 
-  coverImage: '/images/Infinity1.jpeg',
-  images: [
-    '/images/Infinity1.jpeg', 
-    '/images/infinity2.jpeg', 
-    '/images/infinity3.jpeg',
-    '/images/infinity4.jpeg',
-    '/images/infinity5.jpeg'
-  ]
-},
-
 {
   id: 18, 
-  title: 'Roses', 
+  title: 'The Morning After', 
   coverImage: '/images/morningAfter1.jpeg',
   images: [
     '/images/morningAfter1.jpeg',
     '/images/morningAfter2.jpeg',
     '/images/morningAfter3.jpeg'
   ]
-}
+},
+{
+  id: 19, 
+  title: 'Double Infinity', 
+  coverImage: '/images/DoubleInfinity.JPG',
+  images: [
+    '/images/DoubleInfinity1.JPG',
+    '/images/DoubleInfinity3.JPG'
+  ]
+},
+
+{
+  id: 20, 
+  title: 'Patience Park', 
+  coverImage: '/images/WakullaSprings.jpeg',
+  images: [
+    '/images/PatiencePark3.jpeg'
+  ]
+},
+{
+  id: 21, 
+  title: 'Picking Flowers', 
+  coverImage: '/images/PickingFlowers.JPG',
+  images: [
+    '/images/PickingFlowers2.JPG',
+    '/images/PickingFlowers3.JPG'
+  ]
+},
+{
+  id: 22, 
+  title: 'Wakulla Springs', 
+  coverImage: '/images/q1p6o copy.jpeg',
+  images: [
+    '/images/WakullaSprings2.JPG',
+    '/images/WakullaSprings3.JPG'
+  ]
+},
+{
+  id: 23, 
+  title: 'Natures Song', 
+  coverImage: '/images/pT1Nk.png',
+  images: [
+    '/images/YLLY7.jpeg'
+    
+  ]
+},
+
+{
+  id: 24, 
+  title: 'Lafayette Park', 
+  coverImage: '/images/9aiwn.jpeg',
+  images: [
+    '/images/5kKwD.jpeg',
+    
+  ]
+},
+
+{
+  id: 25, 
+  title: 'Dreams', 
+  coverImage: '/images/EAchq.png',
+  images: [
+    '/images/MBE3F.png',
+    
+  ]
+},
+
+
 
 
 
