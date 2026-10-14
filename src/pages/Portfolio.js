@@ -143,9 +143,9 @@ const artworks = [
 {
   id: 20, 
   title: 'Patience Park', 
-  coverImage: '/images/WakullaSprings.jpeg',
+  coverImage: '/images/WakullaSprings.png',
   images: [
-    '/images/WakullaSprings.jpeg',
+    '/images/WakullaSprings.png',
     '/images/PatiencePark3.jpeg'
   ]
 },
