@@ -8,7 +8,9 @@ import './site.css';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
-  useEffect(() => window.scrollTo(0, 0), [pathname]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return null;
 }
 
@@ -21,12 +23,28 @@ export default function App() {
         <Link className="brand" to="/">
           <img src="/images/optimized/logo.webp" alt="" />Riley Galpin
         </Link>
-        <ul>
-          <li><NavLink to="/in-memory">In Memory</NavLink></li>
-          <li><NavLink to="/in-shadow">In Shadow</NavLink></li>
-          <li><NavLink to="/about">About</NavLink></li>
-          <li><NavLink to="/contact">Contact</NavLink></li>
-        </ul>
+      <ul>
+        <li>
+          <NavLink to="/in-memory" className={({ isActive }) => (isActive ? 'active' : '')}>
+            In Memory
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/in-shadow" className={({ isActive }) => (isActive ? 'active' : '')}>
+            In Shadow
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : '')}>
+            About
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')}>
+            Contact
+          </NavLink>
+        </li>
+      </ul>
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
