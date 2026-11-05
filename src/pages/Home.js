@@ -1,49 +1,41 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
+import { SITE, full, thumb, newest } from '../data/artworks';
 
-function Home() {
+export default function Home() {
   return (
-    <div className="home-container">
-      <div className="bio-section">
-        
-        <div className="bio-image-wrapper">
-          <img 
-            src="/images/logo.jpg" 
-            alt="Artist Logo" 
-            className="profile-pic"
-          />
-        </div>
-
-        <div className="bio-text">
-          <h1 className="artist-name">Riley Galpin</h1>
-          <div className="accent-line"></div>
-          <p className="artist-statement">
-            I am an artist specializing in mixed media oil paint with overlayed embroidery. 
-            My work explores themes of memories, identity, and community. Many of my artworks, including my current collection,
-             “In Memory,” have been inspired by the people and images surrounding me.
-             I was inspired to overlay my paintings with embroidered motifs by the style of Sashiko, the art of Japanese visible mending. 
-             Sashiko carries the idea that worn objects have beauty and that repairing them is an act of care.This idea of repair,
-              honoring what has been used, parallels my desire to honor the moments that shape us.
-              From afar the embroidery is nearly invisible, but up close one can see the minute details and color variations intertwining with the oil-paint.
-               The Sashiko shows that the moments captured have shaped and strengthened the individual and should be celebrated.
-               Showing how as a whole small moments may not seem to matter, but they are part of the fabric of people and experiences that make us who we are. 
-
-
-
+    <main>
+      <section className="hero">
+        <div>
+          <img className="logo" src="/images/optimized/logo.webp" alt="" />
+          <h1>{SITE.name}</h1>
+          <hr className="stitch" />
+          <p className="prose">
+            I paint in oil and stitch embroidery over the surface, drawing on Sashiko, the Japanese
+            art of visible mending. My work looks at memory, identity, and community, and at how small
+            moments hold a person together.
           </p>
-          
-          <div className="contact-wrapper">
-            <h3>Connect</h3>
-            <ul className="contact-list">
-              <li><a href="mailto:rgalpinart@gmail.com">Email</a></li>
-              <li><a href="https://www.instagram.com/rileygalpinart/" target="_blank" rel="noreferrer">Instagram</a></li>
-              <li><a href="https://www.tiktok.com/@rileygalpinart" target="_blank" rel="noreferrer">TikTok</a></li>
-            </ul>
-          </div>
+          <Link className="btn" to="/about">About my practice</Link>
+        </div>
+        <img src={full(SITE.hero)} alt="Featured painting by Riley Galpin" fetchpriority="high" />
+      </section>
+
+      <div className="page">
+        <h2>Two series</h2>
+        <div className="series-links">
+          <Link to="/in-memory"><strong>In Memory</strong><span>Paintings of the people and places that shaped me.</span></Link>
+          <Link to="/in-shadow"><strong>In Shadow</strong><span>The newest series, with originals available.</span></Link>
         </div>
 
+        <h2>Newest work</h2>
+        <div className="grid">
+          {newest(3).map((w) => (
+            <Link className="card" key={w.id} to={`/${w.series}`}>
+              <img src={thumb(w.images[0])} alt={w.title} loading="lazy" decoding="async" />
+              <span>{w.title}</span>
+            </Link>
+          ))}
+        </div>
       </div>
-    </div>
+    </main>
   );
 }
-
-export default Home;
