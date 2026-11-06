@@ -8,7 +8,7 @@ export const SITE = {
   newsletterUrl: 'https://YOUR-NEWSLETTER-SIGNUP-URL', // Mailchimp / Buttondown / Kit form action
   hero: 'DoubleInfinity.JPG',                          // big image on the home page
 };
-
+  
 // ---- Image paths (keep original filenames in the data below) ----------------
 const base = (n) => n.replace(/\.[^.]+$/, '');
 export const thumb = (n) => `/images/optimized/thumbs/${encodeURI(base(n))}.webp`;
